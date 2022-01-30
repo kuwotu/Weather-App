@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/main.css" />
+    <script
+      src="https://kit.fontawesome.com/e5c8536330.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Weather App</title>
+  </head>
+  <body>
+    <main>
+      <div id="search-container">
+        <form>
+          <label></label>
+          <input placeholder="Search Location" />
+          <i class="fas fa-search"></i>
+        </form>
+      </div>
+
+      <div id="flex-weather">
+        <div class="weather-info-container">
+          <div id="location-container">
+            <p id="Location">Location</p>
+          </div>
+          <div id="weather-and-date-container">
+            <p id="weather-info">Clear Sky</p>
+            <p id="date">Date</p>
+          </div>
+          <div id="current-weather-container">
+            <p id="current-weather">62 &#8451;</p>
+            <i class="fas fa-cloud-moon-rain"></i>
+          </div>
+        </div>
+
+        <div class="weather-info-container">
+          <div id="feels-like-container">
+            <p>Feels Like</p>
+            <p>62 &#8451;</p>
+          </div>
+
+          <div id="humidity-container">
+            <p>Humidity</p>
+            <p>48%</p>
+          </div>
+
+          <div id="chance-of-rain-container">
+            <p>Chance of Rain</p>
+            <p>0%</p>
+          </div>
+
+          <div id="wind-speed-container">
+            <p>Wind Speed</p>
+            <p>1 mph</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="change-unit-container">
+        <button id="change-unit-btn" type="button">Display &#8457;</button>
+      </div>
+
+      <div id="daily-and-hourly-button-container">
+        <button id="daily-btn" type="button">Daily</button>
+        <button id="hourly-btn" type="button">Hourly</button>
+      </div>
+
+      <div id="daily-weather-container">
+        <div class="daily-weather">
+          <p>Monday</p>
+          <p>62 &#8451;</p>
+          <i class="fas fa-cloud-moon-rain"></i>
+        </div>
+        <div class="daily-weather">
+          <p>Tuesday</p>
+          <p>62 &#8451;</p>
+          <i class="fas fa-cloud-moon-rain"></i>
+        </div>
+        <div class="daily-weather">
+          <p>Wednesday</p>
+          <p>62 &#8451;</p>
+          <i class="fas fa-cloud-moon-rain"></i>
+        </div>
+        <div class="daily-weather">
+          <p>Thursday</p>
+          <p>62 &#8451;</p>
+          <i class="fas fa-cloud-moon-rain"></i>
+        </div>
+        <div class="daily-weather">
+          <p>Friday</p>
+          <p>62 &#8451;</p>
+          <i class="fas fa-cloud-moon-rain"></i>
+        </div>
+        <div class="daily-weather">
+          <p>Saturday</p>
+          <p>62 &#8451;</p>
+          <i class="fas fa-cloud-moon-rain"></i>
+        </div>
+        <div class="daily-weather">
+          <p>Sunday</p>
+          <p>62 &#8451;</p>
+          <i class="fas fa-cloud-moon-rain"></i>
+        </div>
+      </div>
+    </main>
+
+    <footer>Made By Kevwe</footer>
+
+    <script src="/dist/main.js"></script>
+  </body>
+</html>
