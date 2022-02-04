@@ -12,10 +12,14 @@
   </head>
   <body>
     <main>
+      <img
+        id="background-img"
+        src="https://images.unsplash.com/photo-1601134467661-3d775b999c8b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1675&q=80"
+      />
       <div id="search-container">
-        <form>
+        <form id="search-form">
           <label></label>
-          <input placeholder="Search Location" />
+          <input id="search-location" placeholder="Search Location" />
           <i class="fas fa-search"></i>
         </form>
       </div>
@@ -23,37 +27,40 @@
       <div id="flex-weather">
         <div class="weather-info-container">
           <div id="location-container">
-            <p id="Location">Location</p>
+            <p id="location">Location</p>
           </div>
           <div id="weather-and-date-container">
-            <p id="weather-info">Clear Sky</p>
+            <p id="weather-description"></p>
             <p id="date">Date</p>
           </div>
           <div id="current-weather-container">
-            <p id="current-weather">62 &#8451;</p>
-            <i class="fas fa-cloud-moon-rain"></i>
+            <p id="current-weather"></p>
+            <img
+              id="current-weather-icon"
+              src="http://openweathermap.org/img/wn/10d@2x.png"
+            />
           </div>
         </div>
 
-        <div class="weather-info-container">
+        <div class="weather-info-container" id="weather-extras">
           <div id="feels-like-container">
             <p>Feels Like</p>
-            <p>62 &#8451;</p>
+            <p class="extra-weather-results" id="feels-like-temp"></p>
           </div>
 
           <div id="humidity-container">
             <p>Humidity</p>
-            <p>48%</p>
+            <p id="humidity" class="extra-weather-results"></p>
           </div>
 
           <div id="chance-of-rain-container">
             <p>Chance of Rain</p>
-            <p>0%</p>
+            <p class="extra-weather-results">0%</p>
           </div>
 
           <div id="wind-speed-container">
             <p>Wind Speed</p>
-            <p>1 mph</p>
+            <p class="extra-weather-results" id="wind-speed"></p>
           </div>
         </div>
       </div>
