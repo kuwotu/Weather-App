@@ -59,14 +59,29 @@
   background-clip: padding-box;
 }
 
-#weather-and-date-container {
+#weather-container {
   display: flex;
   justify-content: space-around;
   width: 100%;
 }
 
-#current-weather {
+#current-weather-result {
+  display: flex;
+  flex-direction: row;
+}
+
+#current-weather-result p {
   font-size: 50px;
+}
+
+#current-weather-icon-container {
+  display: flex;
+  justify-content: center;
+}
+
+#feels-like-result {
+  display: flex;
+  flex-direction: row;
 }
 
 #weather-extras div {
@@ -89,6 +104,10 @@
   cursor: pointer;
   overflow: hidden;
   outline: none;
+  border: 2px solid rgb(255, 255, 255);
+  padding: 3px;
+  height: 35px;
+  width: 95px;
 }
 
 #daily-and-hourly-button-container {
@@ -98,10 +117,7 @@
 
 #daily-and-hourly-button-container button {
   text-decoration: none;
-  width: 80px;
-  height: 50px;
-  margin: 10px;
-  border: 1px solid rgb(255, 255, 255);
+
   background-color: transparent;
   background-repeat: no-repeat;
   cursor: pointer;
@@ -114,6 +130,11 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  padding-top: 40px;
+}
+
+#daily-weather-container p {
+  padding: 5px 0px;
 }
 
 .daily-weather {
@@ -122,4 +143,30 @@
   align-items: center;
   justify-content: space-evenly;
   height: 100px;
+}
+
+.min-container p {
+  font-size: 16px;
+}
+
+.weather-units-container {
+  display: flex;
+}
+
+.weather-info-units-f,
+.display-button-units-c {
+  display: none;
+  margin-left: 4px;
+}
+
+.weather-info-units-c,
+.display-button-units-f {
+  margin-left: 4px;
+}
+
+footer {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

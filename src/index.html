@@ -27,25 +27,37 @@
       <div id="flex-weather">
         <div class="weather-info-container">
           <div id="location-container">
-            <p id="location">Location</p>
+            <p id="location">London</p>
           </div>
-          <div id="weather-and-date-container">
+          <div id="date-container">
+            <p id="date"></p>
+          </div>
+          <div id="weather-container">
             <p id="weather-description"></p>
-            <p id="date">Date</p>
           </div>
           <div id="current-weather-container">
-            <p id="current-weather"></p>
-            <img
-              id="current-weather-icon"
-              src="http://openweathermap.org/img/wn/10d@2x.png"
-            />
+            <div id="current-weather-result">
+              <p id="current-weather"></p>
+              <p class="weather-info-units-f">&#8457;</p>
+              <p class="weather-info-units-c">&#8451;</p>
+            </div>
+            <div id="current-weather-icon-container">
+              <img
+                id="current-weather-icon"
+                src="http://openweathermap.org/img/wn/10d@2x.png"
+              />
+            </div>
           </div>
         </div>
 
         <div class="weather-info-container" id="weather-extras">
           <div id="feels-like-container">
             <p>Feels Like</p>
-            <p class="extra-weather-results" id="feels-like-temp"></p>
+            <div id="feels-like-result">
+              <p class="extra-weather-results" id="feels-like-temp"></p>
+              <p class="weather-info-units-f">&#8457;</p>
+              <p class="weather-info-units-c">&#8451;</p>
+            </div>
           </div>
 
           <div id="humidity-container">
@@ -55,7 +67,7 @@
 
           <div id="chance-of-rain-container">
             <p>Chance of Rain</p>
-            <p class="extra-weather-results">0%</p>
+            <p id="chance-of-rain" class="extra-weather-results"></p>
           </div>
 
           <div id="wind-speed-container">
@@ -66,49 +78,143 @@
       </div>
 
       <div id="change-unit-container">
-        <button id="change-unit-btn" type="button">Display &#8457;</button>
-      </div>
+        <button
+          class="weather-units-container"
+          id="change-unit-btn"
+          type="button"
+        >
+          Display
 
-      <div id="daily-and-hourly-button-container">
-        <button id="daily-btn" type="button">Daily</button>
-        <button id="hourly-btn" type="button">Hourly</button>
+          <p class="display-button-units-f">&#8457;</p>
+          <p class="display-button-units-c">&#8451;</p>
+        </button>
       </div>
 
       <div id="daily-weather-container">
         <div class="daily-weather">
-          <p>Monday</p>
-          <p>62 &#8451;</p>
-          <i class="fas fa-cloud-moon-rain"></i>
+          <p>Day 1</p>
+          <div class="weather-units-container">
+            <p class="daily-weather-max">62</p>
+            <p class="weather-info-units-f">&#8457;</p>
+            <p class="weather-info-units-c">&#8451;</p>
+          </div>
+          <div class="weather-units-container min-container">
+            <p class="daily-weather-min">62</p>
+            <p class="weather-info-units-f">&#8457;</p>
+            <p class="weather-info-units-c">&#8451;</p>
+          </div>
+          <img
+            class="daily-weather-icons"
+            src="http://openweathermap.org/img/wn/10d@2x.png"
+          />
         </div>
+
         <div class="daily-weather">
-          <p>Tuesday</p>
-          <p>62 &#8451;</p>
-          <i class="fas fa-cloud-moon-rain"></i>
+          <p>Day 2</p>
+          <div class="weather-units-container">
+            <p class="daily-weather-max">62</p>
+            <p class="weather-info-units-f">&#8457;</p>
+            <p class="weather-info-units-c">&#8451;</p>
+          </div>
+          <div class="weather-units-container min-container">
+            <p class="daily-weather-min">62</p>
+            <p class="weather-info-units-f">&#8457;</p>
+            <p class="weather-info-units-c">&#8451;</p>
+          </div>
+          <img
+            class="daily-weather-icons"
+            src="http://openweathermap.org/img/wn/10d@2x.png"
+          />
         </div>
+
         <div class="daily-weather">
-          <p>Wednesday</p>
-          <p>62 &#8451;</p>
-          <i class="fas fa-cloud-moon-rain"></i>
+          <p>Day 3</p>
+          <div class="weather-units-container">
+            <p class="daily-weather-max">62</p>
+            <p class="weather-info-units-f">&#8457;</p>
+            <p class="weather-info-units-c">&#8451;</p>
+          </div>
+          <div class="weather-units-container min-container">
+            <p class="daily-weather-min">62</p>
+            <p class="weather-info-units-f">&#8457;</p>
+            <p class="weather-info-units-c">&#8451;</p>
+          </div>
+          <img
+            class="daily-weather-icons"
+            src="http://openweathermap.org/img/wn/10d@2x.png"
+          />
         </div>
+
         <div class="daily-weather">
-          <p>Thursday</p>
-          <p>62 &#8451;</p>
-          <i class="fas fa-cloud-moon-rain"></i>
+          <p>Day 4</p>
+          <div class="weather-units-container">
+            <p class="daily-weather-max">62</p>
+            <p class="weather-info-units-f">&#8457;</p>
+            <p class="weather-info-units-c">&#8451;</p>
+          </div>
+          <div class="weather-units-container min-container">
+            <p class="daily-weather-min">62</p>
+            <p class="weather-info-units-f">&#8457;</p>
+            <p class="weather-info-units-c">&#8451;</p>
+          </div>
+          <img
+            class="daily-weather-icons"
+            src="http://openweathermap.org/img/wn/10d@2x.png"
+          />
         </div>
+
         <div class="daily-weather">
-          <p>Friday</p>
-          <p>62 &#8451;</p>
-          <i class="fas fa-cloud-moon-rain"></i>
+          <p>Day 5</p>
+          <div class="weather-units-container">
+            <p class="daily-weather-max">62</p>
+            <p class="weather-info-units-f">&#8457;</p>
+            <p class="weather-info-units-c">&#8451;</p>
+          </div>
+          <div class="weather-units-container min-container">
+            <p class="daily-weather-min">62</p>
+            <p class="weather-info-units-f">&#8457;</p>
+            <p class="weather-info-units-c">&#8451;</p>
+          </div>
+          <img
+            class="daily-weather-icons"
+            src="http://openweathermap.org/img/wn/10d@2x.png"
+          />
         </div>
+
         <div class="daily-weather">
-          <p>Saturday</p>
-          <p>62 &#8451;</p>
-          <i class="fas fa-cloud-moon-rain"></i>
+          <p>Day 6</p>
+          <div class="weather-units-container">
+            <p class="daily-weather-max">62</p>
+            <p class="weather-info-units-f">&#8457;</p>
+            <p class="weather-info-units-c">&#8451;</p>
+          </div>
+          <div class="weather-units-container min-container">
+            <p class="daily-weather-min">62</p>
+            <p class="weather-info-units-f">&#8457;</p>
+            <p class="weather-info-units-c">&#8451;</p>
+          </div>
+          <img
+            class="daily-weather-icons"
+            src="http://openweathermap.org/img/wn/10d@2x.png"
+          />
         </div>
+
         <div class="daily-weather">
-          <p>Sunday</p>
-          <p>62 &#8451;</p>
-          <i class="fas fa-cloud-moon-rain"></i>
+          <p>Day 7</p>
+          <div class="weather-units-container">
+            <p class="daily-weather-max">62</p>
+            <p class="weather-info-units-f">&#8457;</p>
+            <p class="weather-info-units-c">&#8451;</p>
+          </div>
+          <div class="weather-units-container min-container">
+            <p class="daily-weather-min">62</p>
+            <p class="weather-info-units-f">&#8457;</p>
+            <p class="weather-info-units-c">&#8451;</p>
+          </div>
+          <img
+            class="daily-weather-icons"
+            src="http://openweathermap.org/img/wn/10d@2x.png"
+          />
         </div>
       </div>
     </main>
